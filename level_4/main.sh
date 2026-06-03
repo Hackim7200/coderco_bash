@@ -1,8 +1,11 @@
 #!/bin/bash
-mkdir level_3/arena 2>/dev/null
+mkdir level_4/arena
+touch level_4/arena/warrior.txt
+touch level_4/arena/mage.txt
+touch level_4/arena/archer.txt
 
-if [[ -e "level_3/arena/hero.txt" ]]; then
-    echo "Hero found"
-else
-    echo "Hero not found"
-fi
+cp -r level_4/arena level_4/backup
+
+
+
+
